@@ -3,26 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebCustomers", ".", "{654FB70B-DB37-4B60-AE97-BEA748F02A3B}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CustomerManagment", "http://localhost/CustomerManagment", "{14D3D98B-5E2C-48D6-B071-4B61F88767A5}"
 	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49706"
-		Debug.AspNetCompiler.PhysicalPath = "..\WebCustomers\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49706\"
+		Debug.AspNetCompiler.VirtualPath = "/CustomerManagment"
+		Debug.AspNetCompiler.PhysicalPath = "..\CustomersManagment\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomerManagment\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49706"
-		Release.AspNetCompiler.PhysicalPath = "..\WebCustomers\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49706\"
+		Release.AspNetCompiler.VirtualPath = "/CustomerManagment"
+		Release.AspNetCompiler.PhysicalPath = "..\CustomersManagment\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomerManagment\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49706"
-		SlnRelativePath = "..\WebCustomers\"
-		DefaultWebSiteLanguage = "Visual C#"
+		SlnRelativePath = "..\CustomersManagment\"
 	EndProjectSection
 EndProject
 Global
@@ -30,13 +29,13 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{654FB70B-DB37-4B60-AE97-BEA748F02A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{654FB70B-DB37-4B60-AE97-BEA748F02A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D47C585F-504C-4FD2-ACA1-35E90A51204F}
+		SolutionGuid = {ABA021B6-95E1-452F-93EE-283A7183883C}
 	EndGlobalSection
 EndGlobal
