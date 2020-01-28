@@ -30,7 +30,7 @@
                     <asp:BoundField DataField="ModifiedBy" HeaderText="ModifiedBy" SortExpression="ModifiedBy" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <a href="EditCustomer.aspx?id=<% # Eval("ID") %>" >Edit</a>
+                            <a href='EditCustomer.aspx?id=<%# Eval("ID") %>' >Edit</a>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
