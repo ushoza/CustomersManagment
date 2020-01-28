@@ -10,6 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Button ID="FilterButton" runat="server" Text="Filter countries" OnClick="FilterButton_Click" />
+             <asp:Button ID="SaveButton" runat="server" Text="UpdateField in DB" OnClick="btnUpdate_Click" />
         </div>
         <div class="importResult">
             <asp:Label ID="ImportResultLabel" runat="server" Text="" EnableViewState="false"></asp:Label>
@@ -25,6 +26,7 @@
                     <asp:BoundField DataField="InternetTLD" HeaderText="InternetTLD" SortExpression="InternetTLD" />
                 </Columns>
             </asp:GridView>
+           
         </div>
         <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/Countries.xml"></asp:XmlDataSource>
     </form>

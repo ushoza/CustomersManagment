@@ -179,7 +179,7 @@
   <Country ID="34750c5e-092c-de11-8c6e-0003ff4ed632" Name="Qatar" PhoneNoFormat="" DialingCountryCode="974" InternationalDialingCode="0 " InternetTLD="QA" />
   <Country ID="35750c5e-092c-de11-8c6e-0003ff4ed632" Name="Reunion" PhoneNoFormat="" DialingCountryCode="262" InternationalDialingCode="00 " InternetTLD="RE" />
   <Country ID="36750c5e-092c-de11-8c6e-0003ff4ed632" Name="Romania" PhoneNoFormat="" DialingCountryCode="40" InternationalDialingCode="00 " InternetTLD="RO" />
-  <Country ID="37750c5e-092c-de11-8c6e-0003ff4ed632" Name="Russia" PhoneNoFormat="" DialingCountryCode="998" InternationalDialingCode="8-10 " InternetTLD="RU" />
+  <Country ID="37750c5e-092c-de11-8c6e-0003ff4ed632" Name="Russia" PhoneNoFormat="+7(###)###-##-##" DialingCountryCode="998" InternationalDialingCode="8-10 " InternetTLD="RU" />
   <Country ID="38750c5e-092c-de11-8c6e-0003ff4ed632" Name="Rwanda" PhoneNoFormat="" DialingCountryCode="250" InternationalDialingCode="00 " InternetTLD="RW" />
   <Country ID="39750c5e-092c-de11-8c6e-0003ff4ed632" Name="San Marino" PhoneNoFormat="" DialingCountryCode="378" InternationalDialingCode="00 " InternetTLD="SM" />
   <Country ID="3a750c5e-092c-de11-8c6e-0003ff4ed632" Name="Sao Tome e Principe" PhoneNoFormat="" DialingCountryCode="239" InternationalDialingCode="01 " InternetTLD="ST" />
