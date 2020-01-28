@@ -35,6 +35,7 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+            <a href="EditCustomer.aspx">Add new customer...</a>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Customers]"></asp:SqlDataSource>
         </div>
     </form>
