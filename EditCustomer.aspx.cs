@@ -7,8 +7,22 @@ using System.Web.UI.WebControls;
 
 public partial class EditCustomer : System.Web.UI.Page
 {
+    private Guid id;
+    protected void Page_Init(object sender, EventArgs e)
+    {
+        id = Guid.Parse(Request["id"]);
+    }
     protected void Page_Load(object sender, EventArgs e)
+    {
+        if(!IsPostBack)
+        {
+
+        }
+    }
+
+    private void getCustomerById()
     {
 
     }
+
 }
