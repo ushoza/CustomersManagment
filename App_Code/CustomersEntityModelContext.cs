@@ -42,9 +42,9 @@ public partial class Customer
     public System.Guid CountryID { get; set; }
     public string EmailAddress { get; set; }
     public string Url { get; set; }
-    public int CreditLimit { get; set; }
-    public bool NewsSubscriber { get; set; }
-    public System.DateTime CreatedDate { get; set; }
+    public Nullable<int> CreditLimit { get; set; }
+    public Nullable<bool> NewsSubscriber { get; set; }
+    public Nullable<System.DateTime> CreatedDate { get; set; }
     public string CreatedBy { get; set; }
     public Nullable<System.DateTime> ModifiedDate { get; set; }
     public string ModifiedBy { get; set; }

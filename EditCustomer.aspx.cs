@@ -11,29 +11,39 @@ public partial class EditCustomer : System.Web.UI.Page
     CustomerManagementEntities context;
     protected void Page_Init(object sender, EventArgs e)
     {
-        id = Guid.Parse(Request["id"]);
+        if(Request["id"] != null)
+            id = Guid.Parse(Request["id"]);
         context = new CustomerManagementEntities();
     }
     protected void Page_Load(object sender, EventArgs e)
     {
         if(!IsPostBack)
         {
-            Customer customer = getCustomerById();
+            Customer customer = getCustomer();
             tbFirstName.Text = customer.FirstName;
             tbLastName.Text = customer.LastName;
             tbAdress.Text = customer.Address;
             ddlCountry.DataSource = context.Countries.ToList();
             ddlCountry.DataValueField = "ID";
             ddlCountry.DataTextField = "Name";
-            ddlCountry.SelectedValue = customer.CountryID.ToString();
+            if(customer.CountryID != Guid.Empty)
+                ddlCountry.SelectedValue = customer.CountryID.ToString();
             ddlCountry.DataBind();
 
         }
     }
 
-    private Customer getCustomerById()
+    private Customer getCustomer()
     {
-        return context.Customers.Where(x => x.ID == id).FirstOrDefault<Customer>();
+        if (Request["id"] != null)
+            return context.Customers.Where(x => x.ID == id).FirstOrDefault<Customer>();
+        else
+        {
+            Customer customer = new Customer();
+            customer.ID = Guid.NewGuid();
+            context.Customers.Add(customer);
+            return customer;
+        }
     }
 
 
@@ -41,12 +51,13 @@ public partial class EditCustomer : System.Web.UI.Page
     {
         if(IsValid)
         {
-            Customer customer = getCustomerById();
+            Customer customer = getCustomer();
             customer.FirstName = tbFirstName.Text;
             customer.LastName = tbLastName.Text;
             customer.Address = tbAdress.Text;
             customer.CountryID = Guid.Parse(ddlCountry.SelectedValue);
             context.SaveChanges();
+            Response.Redirect("~/Customers.aspx");
         }
     }
 }
