@@ -22,6 +22,11 @@ public partial class EditCustomer : System.Web.UI.Page
             tbFirstName.Text = customer.FirstName;
             tbLastName.Text = customer.LastName;
             tbAdress.Text = customer.Address;
+            ddlCountry.DataSource = context.Countries.ToList();
+            ddlCountry.DataValueField = "ID";
+            ddlCountry.DataTextField = "Name";
+            ddlCountry.SelectedValue = customer.CountryID.ToString();
+            ddlCountry.DataBind();
 
         }
     }

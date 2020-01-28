@@ -47,9 +47,8 @@
                         <asp:Label ID="Label4" runat="server" Text="Country"></asp:Label>
                     </td>
                     <td>
-                        <asp:DropDownList ID="ddlCountry" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="ID" Height="20px" Width="129px">
+                        <asp:DropDownList ID="ddlCountry" runat="server" Height="20px" Width="129px">
                         </asp:DropDownList>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [Countries]"></asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
