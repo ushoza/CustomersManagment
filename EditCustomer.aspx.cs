@@ -36,4 +36,17 @@ public partial class EditCustomer : System.Web.UI.Page
         return context.Customers.Where(x => x.ID == id).FirstOrDefault<Customer>();
     }
 
+
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        if(IsValid)
+        {
+            Customer customer = getCustomerById();
+            customer.FirstName = tbFirstName.Text;
+            customer.LastName = tbLastName.Text;
+            customer.Address = tbAdress.Text;
+            customer.CountryID = Guid.Parse(ddlCountry.SelectedValue);
+            context.SaveChanges();
+        }
+    }
 }

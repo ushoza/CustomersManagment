@@ -53,7 +53,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Save" Width="130px" />
+                    </td>
                 </tr>
             </table>
         </div>
