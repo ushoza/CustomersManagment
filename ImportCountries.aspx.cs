@@ -42,13 +42,25 @@ public partial class ImportCountries : System.Web.UI.Page
 
     protected void btnUpdate_Click(object sender, EventArgs e)
     {
-        CustomerManagementEntities context = new CustomerManagementEntities();
-        foreach (XElement country in countriesWithPhNoFormat)
+        try
         {
-            Guid g = new Guid(country.Attribute("ID").Value);
-            Country c = context.Countries.Where(x => x.ID == g).FirstOrDefault<Country>();
-            c.PhoneNoFormat = country.Attribute("PhoneNoFormat").Value;
+            using (CustomerManagementEntities context = new CustomerManagementEntities())
+            {
+                foreach (XElement country in countriesWithPhNoFormat)
+                {
+                    Guid g = new Guid(country.Attribute("ID").Value);
+                    Country c = context.Countries.Where(x => x.ID == g).FirstOrDefault<Country>();
+                    c.PhoneNoFormat = country.Attribute("PhoneNoFormat").Value;
+                }
+                context.SaveChanges();
+                ImportResultLabel.Text = "Импорт завершен успешно";
+            }
         }
-        context.SaveChanges();
+        catch (Exception ex)
+        {
+
+            ImportResultLabel.Text = ex.Message;
+        }
+        
     }
 }
