@@ -24,18 +24,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CustomerManagment", "http:/
 		SlnRelativePath = "..\CustomersManagment\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{EBFA3AA1-9611-40B1-8EB0-57EBA1799A7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D3D98B-5E2C-48D6-B071-4B61F88767A5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EBFA3AA1-9611-40B1-8EB0-57EBA1799A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFA3AA1-9611-40B1-8EB0-57EBA1799A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFA3AA1-9611-40B1-8EB0-57EBA1799A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFA3AA1-9611-40B1-8EB0-57EBA1799A7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {39C933FC-9155-4CCB-B7AE-5FDC1FEB12A0}
+		SolutionGuid = {D9CE0EB9-68CE-4325-82EC-FE8C13190C1B}
 	EndGlobalSection
 EndGlobal
